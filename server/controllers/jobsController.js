@@ -96,8 +96,8 @@ const applyForJob = async (req, res) => {
             const transporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
-                    user: "oludefiyinfoluwa06@gmail.com",
-                    pass: 'snrq dbzx mphb lojd'
+                    user: process.env.EMAIL_USER,
+                    pass: process.env.EMAIL_PASSWORD
                 }
             });
 
